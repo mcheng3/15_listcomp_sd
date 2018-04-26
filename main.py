@@ -3,8 +3,8 @@ def has_chars(word, chars):
 
 def meets_requirements(password):
         return(has_chars(password, [chr(c) for c in range(ord('a'), ord('z') + 1)]) and 
-           has_chars(password, [chr(c) for c in range(ord('A'), ord('Z') + 1)]) and
-           has_chars(password, [chr(c) for c in range(ord('0'), ord('9') + 1)]))
+               has_chars(password, [chr(c) for c in range(ord('A'), ord('Z') + 1)]) and
+               has_chars(password, [chr(c) for c in range(ord('0'), ord('9') + 1)]))
 
 print meets_requirements('aA0');
 print meets_requirements('zZ9');
